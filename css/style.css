@@ -17,6 +17,41 @@
     padding: 0;
 }
 
+.sec-3 .blco-card{
+    margin-top: -10%;
+    height: 30%;
+    width: 80%;
+    display: flex;
+}
+
+.card{
+    height: 80%;
+    width: 30%;
+    margin: 2%;
+    box-shadow: 1%, 1%, 1% 1% black;
+    background-color: var(--cor3);
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    text-align: center;
+}
+
+.card h2{
+    font-size: 1.6vw;
+}
+
+.card h3{
+    padding: 5%;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.card:hover{
+    height: 82%;
+}
+
   
 
 

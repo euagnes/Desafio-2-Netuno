@@ -49,6 +49,18 @@ body main{
     justify-content: center;
 
 }
+.sec-1 .sombra::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg,var(--cor3),transparent,transparent,var(--cor3))border-box;
+    -webkit-mask: linear-gradient(var(--cor3) 0 0), padding-box linear-gradient(var(--cor3) 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 
 .sombra::before{
     content: "";
@@ -87,97 +99,124 @@ body main{
 
 .sec-1 .textoCadastro{
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 10%;
     font-size: 1.8vw;
     color:#00000067;
 }
 
 .sec-1 .textInicio{
     margin-top: 2%;
-    margin-left: 5%;
+    margin-left: 10%;
     font-size: 1.1vw;
     color: var(--cor0);
+    
 }
 
-.sec-1 .nome{
-    padding: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+
+.sec-1 .input0 {
+    margin-top: 5%;
+    padding: 1vw;
+    margin-left: 2vw;
     box-sizing: border-box;
-    margin-bottom: 10px;
-    border: 1px solid #6161614f;
-    border-radius: 8px;
-    font-size: 16px;
+    border: 0.1vh solid #6161614f;
+    border-radius: 0.5vw;
+    font-size: 2.5vh;
 }
 
+input[type="checkbox"] {
+    display: none;
+  }
 
+.sec-1 .checkbox {/* segunda parte do formulario */
+    flex-direction: column;
+    gap: 10;
+    background-color: var(--cor0);
+    text-decoration: none;
+  }
+
+.sec-1  label {/* quadradinhos do formulario */
+    display: inline-block;
+    padding: 10;
+    border: 1.5px solid #ffffff;
+    border-radius: 5;
+    cursor: pointer;
+    margin-top: 15;
+    margin-left: 30;
+    text-decoration: none;
+  }
 
 .sec-2{
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
+    width: 80%;
     display: flex;
     align-items:center;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .sec-2 .img-2{
     background-image: url(../Assets_Netuno/img/dev.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 85%;
-    height: 70vh;
-    margin-left: 25vw;
-    margin-top: -50vh;
+    width: 50%;
+    height: 90%;
 }
 
-.sec-2 .titulo-sec2 {
-   margin-top: -40vh;
-   font-size: 6vh;
-   font-weight: bold;
-   color: var(--cor1);
-   margin-left: 5vw;
+.sec-2 .texto-sec2{
+    margin-top: -10%;
+    height: 50%;
+    width: 40%;
+    color: var(--cor3);
 }
 
-.sec-2 .paragrafo-sec2 {
-    width: 62%;
-    height: 50vh;
-    font-size: 2.4vh;
-    color: var(--cor3); 
-    margin-left: 5vw;
+.sec-2 .texto-sec2 h2{
+    font-size: 3vw;
+    color: var(--cor1);
+    font-weight: ;
 }
 
-.sec-2 .formato-bold {
-    margin-top: 3vh;
-    font-weight: bold;
-    font-size: 2.4vh;
+.sec-2 .texto-sec2 p{
+    font-size: 1.2vw;
+    color: var(--cor3);
+    padding: 0.4rem;
 }
-
-
+.sec-2 .texto-sec2 p strong{
+    font-size: 1.2vw;
+}
 
 .sec-3{
-    height: 110vh;
+    height: 120vh;
     width: 100%;
-    margin-top: -40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor3);
+}
+
+.sec-3 .sec-3-rool{
     display: flex;
     align-items:center;
-    justify-content: flex-start;
-    background-color: white;
+    justify-content: space-around;
+}
+
+.sec-3 .texto-sec3{
+    height: 70%;
+    max-width: 50%;
 }
 
 .sec-3 .img-3 {
     background-image: url(../Assets_Netuno/img/Container2.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 90vh;
-    margin-left: 25vw;
-    margin-top: -15vh;
+    width: 50%;
+    height: 100vh;
+    margin-left: 6%;
+
         
    
 }
 
 .sec-3 .titulo-sec3 {
-    margin-top: -40vh;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor0), var(--cor1));
     font-size: 6vh;
     font-weight: bold;
@@ -192,9 +231,21 @@ body main{
     margin-top: 3vh;
 }  
 
+.sec-3 .risco{
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    width: 35%;
+    margin-top: 1%;
+   position: absolute;
+   opacity: 0.2;
+
+}
+
 .sec-3 .texto3 {
+    font-weight: 500;
     font-size: 2.3vh;
-    margin-top: 3vh;
+    margin-top: 4vh;
+    
 }  
 
 .sec-3 .formato-bold {
@@ -213,7 +264,7 @@ body main{
 
 /* QUADRADOS DA SESAO 3 */
 
-.sec-3 .quadrado1 {
+/* .sec-3 .quadrado1 {
     position: absolute;
     margin-top: 20%;
     height: 15%;
@@ -238,17 +289,30 @@ body main{
     width: 20%;
     background-color: var(--cor0);
     justify-content: space-around;
+} */
+
+
+.sec-4 {
+    width: 100%;
+    height: 55vh;
+    color: var(--cor3);
+    flex-direction: column;
+    background-color: var(--cor0);
 }
 
+.sec-4 .objetivos {
+    font-size: 6vh;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 8vh;
+}
 
-
-
-
-
-
-/* height: 96%;
-    width: 96%;
+.sec-4 .quadro-otimizar {
+    position: absolute;
+    height: 20%;
+    width: 14%;
     background-color: var(--cor3);
-    border-radius: 5%;
-} */
+    color: black;
+}
 
