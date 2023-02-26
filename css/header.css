@@ -1,0 +1,60 @@
+body header{
+    width: 100%;
+    height: 10vh;
+    color: var(--cor3);
+    flex-direction: column;
+}
+header div{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    margin-top: 2%;
+}
+.logo{
+    /* background-color: black; */
+   background-image: url(../Assets_Netuno/assets/logo.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 100%;
+    margin: auto;
+}
+nav{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+a:hover{
+    font-weight: 900;
+}
+
+a{
+    color:var(--cor3);
+}
+
+header .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 60%;
+    width: 15%;
+    background-color: black;
+}
+
+.btn:hover{
+    background-color: var(--cor1);
+    border: 1px solid black;
+    color: black;
+}
+
+.risco-header{
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent 1%, var(--cor3), transparent 97%);
+    z-index: 10;
+}
