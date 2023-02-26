@@ -27,7 +27,7 @@ body main{
     background-image: url(../Assets_Netuno/img/bannertopo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 110%;
     height: 110vh;
     margin-left: -10vw;
     margin-top: -5vh;
@@ -87,7 +87,97 @@ body main{
 
 
 .sec-2{
-
-    
-
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
 }
+
+.sec-2 .img-2{
+    background-image: url(../Assets_Netuno/img/dev.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 85%;
+    height: 70vh;
+    margin-left: 25vw;
+    margin-top: -50vh;
+}
+
+.sec-2 .titulo-sec2 {
+   margin-top: -40vh;
+   font-size: 6vh;
+   font-weight: bold;
+   color: var(--cor1);
+   margin-left: 5vw;
+}
+
+.sec-2 .paragrafo-sec2 {
+    width: 62%;
+    height: 50vh;
+    font-size: 2.4vh;
+    color: var(--cor3); 
+    margin-left: 5vw;
+}
+
+.sec-2 .formato-bold {
+    margin-top: 3vh;
+    font-weight: bold;
+    font-size: 2.4vh;
+}
+
+.sec-3{
+    height: 110vh;
+    width: 100%;
+    margin-top: -40vh;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.sec-3 .img-3{
+    background-image: url(../Assets_Netuno/img/Container2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 90vh;
+    margin-left: 25vw;
+    margin-top: -15vh;
+   
+}
+
+.sec-3 .titulo-sec3 {
+    margin-top: -40vh;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor0), var(--cor1));
+    font-size: 6vh;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+.sec-3 .subtitulo {
+    font-size: 2.9vh;
+    font-weight: bold;
+    margin-top: 3vh;
+}  
+
+.sec-3 .texto3 {
+    font-size: 2.3vh;
+    margin-top: 3vh;
+}  
+
+.sec-3 .formato-bold {
+    font-size: 2.3vh;
+    font-weight: bold;
+    margin-top: 3vh;
+}    
+
+.sec-3 .texto-sec3 {
+    margin-top: 30%;
+    width: 90%;
+    height: 50vh;
+    margin-right: 10vh;
+} 
+
