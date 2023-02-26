@@ -23,6 +23,7 @@ body main{
     align-items:center;
     justify-content: flex-start;
 }
+
 .sec-1 .img-1{
     background-image: url(../Assets_Netuno/img/bannertopo.png);
     background-repeat: no-repeat;
@@ -126,6 +127,8 @@ body main{
     font-size: 2.4vh;
 }
 
+
+
 .sec-3{
     height: 110vh;
     width: 100%;
@@ -180,4 +183,45 @@ body main{
     height: 50vh;
     margin-right: 10vh;
 } 
+
+/* QUADRADOS DA SESAO 3 */
+
+.sec-3 .quadrado1 {
+    position: absolute;
+    margin-top: 20%;
+    height: 15%;
+    width: 20%;
+    background-color: var(--cor0);
+    justify-content: space-around;
+}
+
+.sec-3 .quadrado2 {
+    position: absolute;
+    margin-top: 20%;
+    height: 15%;
+    width: 20%;
+    background-color: var(--cor0);
+    justify-content: space-around;
+}
+
+.sec-3 .quadrado3 {
+    position: absolute;
+    margin-top: 20%;
+    height: 15%;
+    width: 20%;
+    background-color: var(--cor0);
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+/* height: 96%;
+    width: 96%;
+    background-color: var(--cor3);
+    border-radius: 5%;
+} */
 
