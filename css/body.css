@@ -85,6 +85,31 @@ body main{
     top: 30%;
 }
 
+.sec-1 .textoCadastro{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 1.8vw;
+    color:#00000067;
+}
+
+.sec-1 .textInicio{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 1.1vw;
+    color: var(--cor0);
+}
+
+.sec-1 .nome{
+    padding: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #6161614f;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
 
 
 .sec-2{
@@ -139,7 +164,7 @@ body main{
     background-color: white;
 }
 
-.sec-3 .img-3{
+.sec-3 .img-3 {
     background-image: url(../Assets_Netuno/img/Container2.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -147,6 +172,7 @@ body main{
     height: 90vh;
     margin-left: 25vw;
     margin-top: -15vh;
+        
    
 }
 
@@ -178,6 +204,7 @@ body main{
 }    
 
 .sec-3 .texto-sec3 {
+    @media screen and (max-width: 800px) 
     margin-top: 30%;
     width: 90%;
     height: 50vh;
