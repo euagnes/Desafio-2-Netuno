@@ -52,6 +52,43 @@
     height: 82%;
 }
 
+.sec-4 .bloco-square{
+    height: 50%;
+    display: flex;
+    width: 80%;
+    margin: auto;
+
+}
+
+.square{
+    height: 80%;
+    width: 30%;
+    margin: 2%;
+    box-shadow: 1%, 1%, 1% 1% black;
+    background-color: var(--cor3);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 1px  10px 12px rgba(0, 0, 0, 0.236);
+}
+
+.square h2{
+    font-size: 1.6vw;
+    color: black;
+}
+
+.square h3{
+    padding: 5%;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: black;
+}
+
+.square:hover{
+    height: 82%;
+}
   
 
 

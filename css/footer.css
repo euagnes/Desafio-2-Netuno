@@ -1,11 +1,85 @@
-body footer{
+footer{
+    display: flex;
     width: 100%;
     height: 45vh;
     color: var(--cor3);
-    flex-direction: column;
+    flex-direction: row;
     background-color: black;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer .img {
+footer .rodape{ 
+   width: 30%;
+   
+}
+
+footer .rodape ul{
+    flex-direction: row;
+    display: flex;
+    margin-top: 5%;
+    margin-left: -5%;
+    list-style: none;
+}
+
+
+.ico{
+    height: 40%;
+}
+
+footer .btn-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 15%;
+    width: 13%;
+    margin-right: 10%;
+    background-color: var(--cor3);
+    
+}
+
+footer .btn-footer a{
+    color: black;
+}
+
+footer .btn-footer:hover{
+    background-color: var(--cor1);
+    border: 0.3px solid black;
+    color: black;
+}
+
+footer .contato{
+    margin-left: 3%;
+}
+
+footer span{
+    height: 50%;
+    width: 1px;
+    background-color: var(--cor3);
+    margin-left: 2%;
+}
+
+footer .contato p{
+    padding: 5%;
+}
+
+footer .menu{
+   width: 8%;
+}
+
+footer .menu ul li{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer .rodape ul li a{
+    margin-left: 2vw;
+    padding: 1%;
+    
+}
+
+footer .btn-footer a{
+    text-decoration: none;
     
 }

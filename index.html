@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/resp.css">
+
 </head>
 
 <body>
     <header>
-        <!-- <img src="netuno/Assets_Netuno/assets/logo.png" alt="logo netuno">   -->
         <div>
             <div class="logo"></div>
             <nav>
@@ -33,126 +34,142 @@
             <div class="img-1"></div>
             <div class="sombra">
                 <form action="" class="form">
-
-                    <!-- <div class="text-inicial">
+                    <div class="formulario">
                         <div class="textoCadastro">
-                            Formulário de Cadastro
+                            <h2>Formulário de Cadastro</h2>
+                            <h3>Preencha seus dados</h3>
                         </div>
-                        <div class="textInicio">
-                            Preencha seus dados
-                        </div>
-                    </div>
+                            <div class="Dados-cadastrais">
+                                <label class="nome">
+                                    <img class="ico" src="Assets_Netuno/icones/user.png" alt="user">
+                                    <input type="text" class="name" placeholder="Nome Completo " name="nome" required/>
+                                </label>
 
-                    <div class="dados">
-                        <label class="label0" for="name" placeholder="nome"></label>
-                        <input class="input0" type="text" id="name" name="name" placeholder="Nome completo">
-                    
-                        <label class="label0" for="email" placeholder="email"></label>
-                        <input class="input0" type="text" id="email" name="email" placeholder="E-mail">
-                    
-                        <label class="label0" for="email"></label>
-                        <input class="input0" type="text" id="estado" name="estado" placeholder="Estado">
+                                <label class="e-mail">
+                                    <img class="ico" src="Assets_Netuno/icones/mail.png" alt="e-mail">
+                                    <input  type="text" class="e-mail" placeholder="E-mail " name="e-mail" required/>
+                                </label>
+                        
+                                <label class="estado">
+                                    <img class="ico" src="Assets_Netuno/icones/state.png" alt="ico">       
+                                    <select name="estados" id="Estados" required>
+                                        <option value="AC" selected>Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </label>
+                            </div>    
+                        
+                        <div class="checkbox">
+                            <h2>Conhecimento de Programação*</h2>
+
+                            <label class="opcao1"> 
+                                <input type="checkbox" id="opcao1" name="opcoes" value="opcao1">
+                                HTML
+                            </label>
+                            
+                            <label class="opcao2"> 
+                                <input type="checkbox" id="opcao2" name="opcoes" value="opcao2">
+                                CSS
+                            </label>
+                                
+                            <label class="opcao3"> 
+                                <input type="checkbox" id="opcao3" name="opcoes" value="opcao3">
+                                JavaScript
+                            </label>
+                                        
+                            <label class="opcao4"> 
+                                <input type="checkbox" id="opcao4" name="opcoes" value="opcao4">
+                                PHP
+                            </label>
+                        
+                            <label class="opcao5"> 
+                                <input type="checkbox" id="opcao5" name="opcoes" value="opcao5">
+                                .NET
+                            </label>
+                
+                            <label class="opcao6"> 
+                                <input type="checkbox" id="opcao6" name="opcoes" value="opcao6">
+                                Vue.JS
+                            </label>
+
+                            <label class="opcao7"> 
+                                <input type="checkbox" id="opcao7" name="opcoes" value="opcao7">
+                                ReactJS
+                            </label>
+                        
+                            <label class="opcao8"> 
+                                <input type="checkbox" id="opcao8" name="opcoes" value="opcao8">
+                                React Native
+                            </label>
+            
+                            <label class="opcao9"> 
+                                <input type="checkbox" id="opcao9" name="opcoes" value="opcao9">
+                                Node
+                            </label>
+            
+                            <label class="opcao10"> 
+                                <input type="checkbox" id="opcao10" name="opcoes" value="opcao10">
+                                Python
+                            </label>
+
+                            <label class="opcao11"> 
+                                <input type="checkbox" id="opcao11" name="opcoes" value="opcao11">
+                                Flutter
+                            </label>
+
+                            <label class="opcao12"> 
+                                <input type="checkbox" id="opcao12" name="opcoes" value="opcao12">
+                                outras
+                            </label>
+                            
+                        </div>
+            
+                        <p>
+                            Já trabalhou com desenvolvimento?
+                        </p>
+            
+                        <div class="simnao">
+                            <input class="S" type="checkbox" id="opcao13" name="opcoes" value="opcao13">
+                            <label class="S" for="opcao13"> </label>
+                            <span>
+                                Sim
+                            </span>
+                            <input class="N" type="checkbox" id="opcao14" name="opcoes" value="opcao14">
+                            <label class="N" for="opcao14"> </label>
+                            <span>
+                                Não
+                            
+                        </span></div>
+            
+                        <input class="input0" type="submit" value="Enviar">
+            
                     </div>
                     
-                    <div class="checkbox">
-                            
-                        <div>
-                            <P>
-                                HTML
-                            </P>
-        
-                            <input type="checkbox" id="opcao1" name="opcoes" value="opcao1">
-                            <label for="opcao1"> </label>
-                        </div>
-                    
-                        <div>
-                            <P>
-                                CSS
-                            </P>
-                            <input type="checkbox" id="opcao2" name="opcoes" value="opcao2">
-                            <label for="opcao2"> </label>
-                        </div>
-                                    
-                        <div>
-                            <P>
-                                JavaScript
-                            </P>
-                            <input type="checkbox" id="opcao3" name="opcoes" value="opcao3">
-                            <label for="opcao3"> </label>
-                        </div>
-                    
-                         <div>
-                            <P>
-                                 PHP
-                            </P>
-                            <input type="checkbox" id="opcao4" name="opcoes" value="opcao4">
-                            <label for="opcao4"> </label>
-                        </div>
-                    
-                        <div>
-                            <P>
-                                .NET
-                            </P>
-                            <input type="checkbox" id="opcao5" name="opcoes" value="opcao5">
-                            <label for="opcao5"></label>
-                        </div>
-                    
-                        <div>
-                            <P>
-                                 Vue.JS
-                            </P>
-                            <input type="checkbox" id="opcao6" name="opcoes" value="opcao6">
-                            <label for="opcao6"></label>
-                        </div>
-                    
-                        <div>
-                            <P>
-                                ReactJS
-                            </P>
-                            <input type="checkbox" id="opcao7" name="opcoes" value="opcao7">
-                            <label for="opcao7"></label>
-                        </div>  
-        
-                        <div>
-                            <P>
-                                React Native
-                            </P>
-                            <input type="checkbox" id="opcao8" name="opcoes" value="opcao8">
-                            <label for="opcao8"> </label>
-                        </div>
-        
-                        <div>
-                            <P>
-                                 Node
-                            </P>
-                            <input type="checkbox" id="opcao9" name="opcoes" value="opcao9">
-                            <label for="opcao9"></label>
-                        </div>
-                    
-                        <div>
-                            <P>
-                                Python
-                            </P>
-                            <input type="checkbox" id="opcao10" name="opcoes" value="opcao10">
-                            <label for="opcao10"></label>
-                        </div>
-                    
-                        <div>
-                            <P>
-                                Flutter
-                            </P>
-                            <input type="checkbox" id="opcao11" name="opcoes" value="opcao11">
-                            <label for="opcao11"></label>
-                        </div>
-        
-                        <div>
-                            <P>
-                                outras
-                            </P>
-                            <input type="checkbox" id="opcao12" name="opcoes" value="opcao12">
-                            <label for="opcao12"> </label>
-                        </div>
-                    </div> -->
 
                 </form>
             </div>
@@ -161,7 +178,6 @@
             </span>
         </section>
 
-        
         <section class="sec-2">
             <div class="img-2"></div>
 
@@ -250,72 +266,114 @@
                         não o pode fazer.</h3>
                 </div>
            </div>
+
+           <div class="joranda">
+                <div class="tilt">
+                    <h2>Sua Jornada</h2>
+                </div>
+
+
+
+
+
+
+            
+            <div class="btn-sec2">
+                <img class="ico" src="Assets_Netuno/icones/enter.png" alt="enter">
+                <a href=""> Quero me cadastrar para o <p> Processo Seletivo</p></a>
+                <img src="Assets_Netuno/Elements/Vector1.png" alt="vetor 1">
+            </div>
+           </div>
         </section>
 
         <section class="sec-4">
-
             <div class="objetivos">
                 <h2 class="objetivos">Objetivos</h2>
             </div>
-
-            <!-- <div class="quadro-otimizar">
-                <div class="bold-quadrado1">
+    
+            <div class="bloco-square">
+                <div class="square">
                     <h2>Otimizar</h2>
+                    <h3>
+                        Otimizar todo processo de
+                        contratação chegando a
+                        contribuir com uma economia interessadas em ingressar na
+                        de 40% no processo de recrutamento.>
+                    </h3>
                 </div>
-                <div class="text-quadro1">
-                    Otimizar todo processo de
-                    contratação chegando a
-                    contribuir com uma economia interessadas em ingressar na
-                    de 40% no processo de recrutamento.
-                </div>>
-            </div>
-
-            <div class="quadrado-gerar">
-                <div class="bold-quadrado2">
-                    Gerar
-                </div>
-                <div class="tex-quadrado2">
-                    erar novas oportunidades de
-                    carreira para pessoas interessadas em ingressar
-                    na areás que esteja descontente.
-                </div>
-            </div>
         
-            <div class="filtrar">
-                <div class="bold-quadrado3">
-                    Filtrar
+                <div class="square">
+                    <h2>Gerar</h2>
+                    <h3>
+                        Gerar novas oportunidades de
+                        carreira para pessoas interessadas em ingressar
+                        na areás que esteja descontente.
+                    </h3>
                 </div>
-                <div class="text-quadrado3">
-                    criar oportunidades brilhantes para profissionais que
-                    se destacam junto a parceiros estratégicos de negócios.
-                </div>
-            </div> -->
+        
+                <div class="square">
+                    <h2>Filtrar</h2>
+                    <h3>
+                        criar oportunidades brilhantes para profissionais que
+                        se destacam junto a parceiros estratégicos de negócios.
+                    </h3>
+                </div>     
+            </div>
         </section>
-
-
-
     </main>
 
-
-
-
-
     <Footer>
-        <div class="img-1"></div>
-        <p>Netunoê 2022 - Todos os direitos reservados</p>
-        <p>O Projeto </p>
-        <p>O Problema</p>
-        <p>Sua Jornada</p>
-        <p>Objetivos</p>
+            <div class="rodape">
+                <a href="">
+                    <img src="Assets_Netuno/assets/logo+slogan.png" alt="">
+                </a>
 
-        <p>Contato</p>
-        <p>1191234.5678</p>
-        <p>contato@netuno.com.br</p>
+                <ul>
+                    <li>  
+                        <a href=""target="">
+                            <img class="ico" src="Assets_Netuno/icones/fb.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/fastersbr/"target="_blank">
+                            <img  class="ico"src="Assets_Netuno/icones/ig.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/fastersbr/"target="_blank">
+                            <img class="ico" src="Assets_Netuno/icones/in.png"/>
+                        </a>
+                    </li>
+                </ul>
+                <p>Netuno 2022 - Todos os direitos reservados</p>
+            </div>
+            <div class="btn-footer">
+                <a href=""> Processo Seletivo</a>
+            </div>
 
-
-
-
-
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#project">O Projeto</a>
+                    </li>
+                    <li>
+                        <a href="#problem">O Problema</a>
+                    </li>
+                    <li>
+                        <a href="#journey">Sua Jornada</a>
+                    </li>
+                    <li>
+                        <a href="#goals">Objetivos</a>
+                    </li>
+                </ul>
+            </div>
+            <span></span>
+            <div class="contato">
+                    <p>Contato</p>
+                    <p>11 91234.5678</p>
+                    <p>contato@netuno.com.br</p>
+            </div>
+        </div>   
     </Footer>
 
 

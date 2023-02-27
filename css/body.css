@@ -61,7 +61,6 @@ body main{
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
-
 .sombra::before{
     content: "";
     position: absolute;
@@ -79,6 +78,95 @@ body main{
     background-color: var(--cor3);
     border-radius: 5%;
 }
+
+.formulario {
+    height: 100%;
+    width: 100%;
+    max-height: 90vh;
+    background-color: var(--cor3);
+    border-radius: 1vw;
+    flex-direction: column;
+}
+
+.formulario .textoCadastro h2{
+    margin-top: 10%;
+    height: 35%;
+    margin-bottom: 2%;
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 1.8vw;
+}
+
+.formulario .textoCadastro h3{
+    color: var(--cor0);
+    font-size: 2.3vh;
+
+}
+
+.formulario .Dados-cadastrais label{
+    display: flex;
+    text-align: center;
+    width: 40%;
+    color: var(--cor3);
+    justify-content: space-around;
+    margin-left: 5%;
+    font-size: 1.2vh;
+    align-items: center;
+}
+
+
+
+.formulario .Dados-cadastrais input{
+    appearance: none;
+    width: 40vw;
+    height: 4vh;
+    max-width: 100%;
+    max-height: 100%;
+    border: 0.1rem solid #00000067;
+    border-radius: 5%;
+    outline: none;
+    cursor: pointer;
+    margin-right: -15%;
+    border-radius: 0.2rem;
+}
+
+.formulario .checkbox{
+    height: 20%;
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--cor0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .formulario .checkbox label{
+    display: flex;
+    text-align: center;
+    width: 20%;
+    color: $color-white;
+    justify-content: space-around;
+    margin-left: 2%;
+    font-size: 1.2vh;
+    align-items: center;
+} */
+
+.formulario .checkbox input{
+    appearance: none;
+    width: 1vw;
+    height: 2vh;
+    max-width: 50%;
+    max-height: 50%;
+    border: 0.1rem solid var(--cor3);
+    border-radius: 5%;
+    outline: none;
+    cursor: pointer;
+    margin-right: -15%;
+    border-radius: 0.2rem;
+}
+
+
 
 .sec-1 span{
     position: absolute;
@@ -123,27 +211,6 @@ body main{
     font-size: 2.5vh;
 }
 
-input[type="checkbox"] {
-    display: none;
-  }
-
-.sec-1 .checkbox {/* segunda parte do formulario */
-    flex-direction: column;
-    gap: 10;
-    background-color: var(--cor0);
-    text-decoration: none;
-  }
-
-.sec-1  label {/* quadradinhos do formulario */
-    display: inline-block;
-    padding: 10;
-    border: 1.5px solid #ffffff;
-    border-radius: 5;
-    cursor: pointer;
-    margin-top: 15;
-    margin-left: 30;
-    text-decoration: none;
-  }
 
 .sec-2{
     height: 80vh;
@@ -171,7 +238,6 @@ input[type="checkbox"] {
 .sec-2 .texto-sec2 h2{
     font-size: 3vw;
     color: var(--cor1);
-    font-weight: ;
 }
 
 .sec-2 .texto-sec2 p{
@@ -179,12 +245,13 @@ input[type="checkbox"] {
     color: var(--cor3);
     padding: 0.4rem;
 }
+
 .sec-2 .texto-sec2 p strong{
     font-size: 1.2vw;
 }
 
 .sec-3{
-    height: 120vh;
+    height: 160vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -201,7 +268,8 @@ input[type="checkbox"] {
 
 .sec-3 .texto-sec3{
     height: 70%;
-    max-width: 50%;
+    max-width: 35%;
+    margin-left: -20%;
 }
 
 .sec-3 .img-3 {
@@ -217,7 +285,7 @@ input[type="checkbox"] {
 }
 
 .sec-3 .titulo-sec3 {
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor0), var(--cor1));
+    background-image: linear-gradient(to right, var(--cor0), transparent 70%);
     font-size: 6vh;
     font-weight: bold;
     background-clip: text;
@@ -236,8 +304,8 @@ input[type="checkbox"] {
     height: 1px;
     width: 35%;
     margin-top: 1%;
-   position: absolute;
-   opacity: 0.2;
+    position: absolute;
+    opacity: 0.2;
 
 }
 
@@ -262,42 +330,31 @@ input[type="checkbox"] {
     margin-right: 10vh;
 } 
 
-/* QUADRADOS DA SESAO 3 */
-
-/* .sec-3 .quadrado1 {
-    position: absolute;
-    margin-top: 20%;
-    height: 15%;
-    width: 20%;
-    background-color: var(--cor0);
-    justify-content: space-around;
+.sec-3 .tilt h2{
+    background-image: linear-gradient(to right, var(--cor0), transparent 170%);
+    font-size: 6vh;
+    margin-top: 70%;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.sec-3 .quadrado2 {
-    position: absolute;
-    margin-top: 20%;
-    height: 15%;
-    width: 20%;
-    background-color: var(--cor0);
-    justify-content: space-around;
-}
 
-.sec-3 .quadrado3 {
-    position: absolute;
-    margin-top: 20%;
-    height: 15%;
-    width: 20%;
-    background-color: var(--cor0);
-    justify-content: space-around;
-} */
+
+
+
+
+
 
 
 .sec-4 {
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     color: var(--cor3);
     flex-direction: column;
-    background-color: var(--cor0);
+    justify-content: center;
+    align-items: center;
 }
 
 .sec-4 .objetivos {
@@ -308,11 +365,5 @@ input[type="checkbox"] {
     margin-top: 8vh;
 }
 
-.sec-4 .quadro-otimizar {
-    position: absolute;
-    height: 20%;
-    width: 14%;
-    background-color: var(--cor3);
-    color: black;
-}
+
 
