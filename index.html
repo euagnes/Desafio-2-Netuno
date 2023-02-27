@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netuno</title>
     <link rel="shortcut icon" href="nmetuno/Assets_Netuno/assets/fiv.png"type="image/x-icon">
+    <link rel="shortcut icon" href="Assets_Netuno/icones/diamante.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/resp.css">
-
 </head>
 
 <body>
@@ -33,122 +33,87 @@
         <section class="sec-1">
             <div class="img-1"></div>
             <div class="sombra">
-                <form action="" class="form">
-                    <div class="formulario">
-                        <div class="textoCadastro">
-                            <h2>Formulário de Cadastro</h2>
-                            <h3>Preencha seus dados</h3>
+                <div id="form">
+                    <form action="">
+                        <h2 class="title">Formulário de Cadastro</h2>
+                        <h3 class="title">Preencha seus dados</h3>
+                        <div class="input">
+                            <img src="Assets_Netuno/icones/user.png" alt="user-icon">
+                            <input id="Nome Completo*" name="Nome Completo" placeholder="Nome Completo" type="text">
                         </div>
-                            <div class="Dados-cadastrais">
-                                <label class="nome">
-                                    <img class="ico" src="Assets_Netuno/icones/user.png" alt="user">
-                                    <input type="text" class="name" placeholder="Nome Completo " name="nome" required/>
-                                </label>
-
-                                <label class="e-mail">
-                                    <img class="ico" src="Assets_Netuno/icones/mail.png" alt="e-mail">
-                                    <input  type="text" class="e-mail" placeholder="E-mail " name="e-mail" required/>
-                                </label>
-                        
-                                <label class="estado">
-                                    <img class="ico" src="Assets_Netuno/icones/state.png" alt="ico">       
-                                    <select name="estados" id="Estados" required>
-                                        <option value="AC" selected>Acre</option>
-                                        <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
-                                        <option value="AM">Amazonas</option>
-                                        <option value="BA">Bahia</option>
-                                        <option value="CE">Ceará</option>
-                                        <option value="DF">Distrito Federal</option>
-                                        <option value="ES">Espírito Santo</option>
-                                        <option value="GO">Goiás</option>
-                                        <option value="MA">Maranhão</option>
-                                        <option value="MT">Mato Grosso</option>
-                                        <option value="MS">Mato Grosso do Sul</option>
-                                        <option value="MG">Minas Gerais</option>
-                                        <option value="PA">Pará</option>
-                                        <option value="PB">Paraíba</option>
-                                        <option value="PR">Paraná</option>
-                                        <option value="PE">Pernambuco</option>
-                                        <option value="PI">Piauí</option>
-                                        <option value="RJ">Rio de Janeiro</option>
-                                        <option value="RN">Rio Grande do Norte</option>
-                                        <option value="RS">Rio Grande do Sul</option>
-                                        <option value="RO">Rondônia</option>
-                                        <option value="RR">Roraima</option>
-                                        <option value="SC">Santa Catarina</option>
-                                        <option value="SP">São Paulo</option>
-                                        <option value="SE">Sergipe</option>
-                                        <option value="TO">Tocantins</option>
-                                    </select>
-                                </label>
-                            </div>    
-                        
-                        <div class="checkbox">
-                            <h2>Conhecimento de Programação*</h2>
-
-                            <label class="opcao1"> 
-                                <input type="checkbox" id="opcao1" name="opcoes" value="opcao1">
-                                HTML
-                            </label>
-                            
-                            <label class="opcao2"> 
-                                <input type="checkbox" id="opcao2" name="opcoes" value="opcao2">
-                                CSS
-                            </label>
-                                
-                            <label class="opcao3"> 
-                                <input type="checkbox" id="opcao3" name="opcoes" value="opcao3">
-                                JavaScript
-                            </label>
-                                        
-                            <label class="opcao4"> 
-                                <input type="checkbox" id="opcao4" name="opcoes" value="opcao4">
-                                PHP
-                            </label>
-                        
-                            <label class="opcao5"> 
-                                <input type="checkbox" id="opcao5" name="opcoes" value="opcao5">
-                                .NET
-                            </label>
-                
-                            <label class="opcao6"> 
-                                <input type="checkbox" id="opcao6" name="opcoes" value="opcao6">
-                                Vue.JS
-                            </label>
-
-                            <label class="opcao7"> 
-                                <input type="checkbox" id="opcao7" name="opcoes" value="opcao7">
-                                ReactJS
-                            </label>
-                        
-                            <label class="opcao8"> 
-                                <input type="checkbox" id="opcao8" name="opcoes" value="opcao8">
-                                React Native
-                            </label>
-            
-                            <label class="opcao9"> 
-                                <input type="checkbox" id="opcao9" name="opcoes" value="opcao9">
-                                Node
-                            </label>
-            
-                            <label class="opcao10"> 
-                                <input type="checkbox" id="opcao10" name="opcoes" value="opcao10">
-                                Python
-                            </label>
-
-                            <label class="opcao11"> 
-                                <input type="checkbox" id="opcao11" name="opcoes" value="opcao11">
-                                Flutter
-                            </label>
-
-                            <label class="opcao12"> 
-                                <input type="checkbox" id="opcao12" name="opcoes" value="opcao12">
-                                outras
-                            </label>
-                            
+                        <div class="input">
+                          <img src="Assets_Netuno/icones/mail.png" class="icon-email" alt="email-icon">
+                          <input id="e-mail" name="e-mail" placeholder="E-mail" type="text">
                         </div>
-            
+
+
+                        <div id="btn">
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                        <!-- <div class="estado">
+                            <select name="estados" id="Estados" required>
+                                <option value="AC" selected>Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select> -->
+                        <!-- </div> -->
+                    </form>
+
+                    <fildeset class="grupo">
+                        <div class="campo">
+                            <label> Conhecimento de Programação* </label><br><br>
+                            <input type="checkbox" id="opcao1" name="opcoes" value="HTML">
+                            <label for="opcao1">HTML</label>
+                            <input type="checkbox" id="opcao2" name="opcoes" value="CSS">
+                            <label for="opcao2">CSS</label>
+                            <input type="checkbox" id="opcao3" name="opcoes" value="JavaScript">
+                            <label for="opcao3">JavaScript</label>
+                            <input type="checkbox" id="opcao4" name="opcoes" value="PHP">
+                            <label for="opcao4">PHP</label>
+                            <input type="checkbox" id="opcao5" name="opcoes" value=".NET">
+                            <label for="opcao5">.NET</label>
+                            <input type="checkbox" id="opcao6" name="opcoes" value="Vue.JS">
+                            <label for="opcao6">Vue.JS</label>
+                            <input type="checkbox" id="opcao7" name="opcoes" value="ReactJS">
+                            <label for="opcao7">ReactJS</label>
+                            <input type="checkbox" id="opcao8" name="opcoes" value="React Native">
+                            <label for="opcao8">React Native</label>
+                            <input type="checkbox" id="opcao9" name="opcoes" value="Node">
+                            <label for="opcao9">Node</label>
+                            <input type="checkbox" id="opcao10" name="opcoes" value="Python">
+                            <label for="opcao8">Python</label>
+                            <input type="checkbox" id="opcao11" name="opcoes" value="Flutter">
+                            <label for="opcao11">Flutter</label>
+                            <input type="checkbox" id="opcao12" name="opcoes" value=" outras">
+                            <label for="opcao12"> outras</label>
+                        </div>
+
+                    </fildeset>
+                    
                         <p>
                             Já trabalhou com desenvolvimento?
                         </p>
@@ -171,7 +136,7 @@
                     </div>
                     
 
-                </form>
+                </div>
             </div>
             <span>
                 <img src="Assets_Netuno/Elements/vector4.png" alt="">
@@ -272,24 +237,26 @@
                     <h2>Sua Jornada</h2>
                 </div>
 
-                <div class="quadrados-sec3">
-                    <div class="cartao-1">
+                <div class="bloco-jornada-pt1">
+                    <div class="cartao">
                         <p>Programas de 4 meses de duração, sendo 6 horas/dia.</p>
                     </div>
-                    <div class="cartao-2">
+                    <div class="cartao">
                         <p>Do Zero ao Junior promissor em 4 meses.</p>
                     </div>
-                    <div class="cartao-3">
+                    <div class="cartao">
                         <p>640 horas de aplicação prática dos conceitos.</p>
                     </div>
-                    <div class="cartao-4">
-                        <p>mentoria individual e coletiva em padrão ágil.</p>
-                    </div>
-                    <div class="cartao-5">
-                        <p>100% Home Officecom plataformas de cursos online.</p>
-                    </div>
-                    <div class="cartao-6">
-                        <p>Variedade de áreas dentro da tecnologia.</p>
+                    <div class="bloco-jornada-pt2">
+                        <div class="cartao">
+                            <p>mentoria individual e coletiva em padrão ágil.</p>
+                        </div>
+                        <div class="cartao">
+                            <p>100% Home Officecom plataformas de cursos online.</p>
+                        </div>
+                        <div class="cartao">
+                            <p>Variedade de áreas dentro da tecnologia.</p>
+                        </div>
                     </div>
                 </div>
 
