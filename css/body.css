@@ -28,16 +28,14 @@ body main{
     background-image: url(../Assets_Netuno/img/bannertopo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 110%;
+    width: 120vw;
     height: 110vh;
     margin-left: -10vw;
     margin-top: -5vh;
-
-    /* FLEX */
 }
 
 .sec-1 .sombra{
-    height: 82vh;
+    height: 100vh;
     width: 35%;
     /* POSIÇÂO */
     position: absolute;
@@ -74,13 +72,13 @@ body main{
 
 .sec-1 .sombra form{
     height: 96%;
-    width: 96%;
     background-color: var(--cor3);
     border-radius: 5%;
+    
 }
 
 #form{
-    height: 80vh;
+    height: 96vh;
     width: 95%;
     border-radius: 3%;
     padding: 2px;
@@ -91,28 +89,28 @@ body main{
 
 form h2{
     margin-top: 5%;
+    margin-bottom: 3%;
     margin-left: 12%;
     font-size: 1.8em;
-    margin-bottom: 3%;
     color: rgba(0, 0, 0, 0.438);
 }
 form h3{
     margin-left: 12%;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--cor0);
     
 }
 
 form .input{
-    width: 90%;
-    min-width: 280px;
-    border-radius: 6px;
-    border: 1px rgba(70, 69, 69, 0.575) solid;
+    width: 80%;
+    min-width: 80%;
+    border-radius: 0.5em;
+    border: 0.1px rgba(70, 69, 69, 0.575) solid;
     padding: 6px;
     margin: 10px 0px 11px 24px;
 }
 
-form .input img{
+form .input .cartao .img{
     height: 5%;
     width: 4%;
     padding: 4px;
@@ -131,23 +129,28 @@ form .input input{
     transform: translateY(-40%);
 }
 
-form .campo{
-    margin-bottom: 1em;
-}
-
-form fieldset .grupo .campo{
-    height: 30%;
-    width: 60%;
-    margin-bottom: 0.2em;
+form {
+    width: 100%;
     color: rgb(8, 8, 8);
-    display: block;
+    background-color: var(--cor0);
+}
+
+form .form-pt2{
+    background-color: var(--cor0);
+    padding: 10%;
+    margin-left: -0.3%;
+    margin-right: -0.5%;
+    margin-top: 3%;
+}
+
+form .form-pt2 h2{
+    font-size: 1.1em;
+    color: #ffffff;
 }
 
 
 
-
-
-.sec-1 span{
+/* .sec-1 span{
     position: absolute;
     display: flex;
     justify-content: flex-end;
@@ -155,7 +158,7 @@ form fieldset .grupo .campo{
     height: 100%;
     width: 100%;
     z-index: 1;
-}
+} */
 
 .sec-1 span img{
     position: absolute;
@@ -263,8 +266,8 @@ form fieldset .grupo .campo{
    
 }
 
-.sec-3 .titulo-sec3 {
-    background-image: linear-gradient(to right, var(--cor0), transparent 70%);
+.sec-3 .titulo-sec3 h2{
+    background-image: linear-gradient(to right, var(--cor0), transparent 94%);
     font-size: 6vh;
     font-weight: bold;
     background-clip: text;
@@ -272,7 +275,7 @@ form fieldset .grupo .campo{
     -webkit-text-fill-color: transparent;
 }
     
-.sec-3 .subtitulo {
+.sec-3 .subtitulo h2{
     font-size: 2.9vh;
     font-weight: bold;
     margin-top: 3vh;
@@ -288,7 +291,7 @@ form fieldset .grupo .campo{
 
 }
 
-.sec-3 .texto3 {
+.sec-3 .texto3 h3{
     font-weight: 500;
     font-size: 2.3vh;
     margin-top: 4vh;

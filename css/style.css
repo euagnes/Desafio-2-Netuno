@@ -25,9 +25,9 @@
 }
 
 .card{
-    height: 70%;
-    width: 30%;
-    margin: 1%;
+    height: 15em;
+    width: 30em;
+    margin: 0.5em;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.459);
     background-color: var(--cor3);
     border-radius: 5%;
@@ -48,8 +48,58 @@
 }
 
 .card:hover{
-    height: 80%;
+    height: 18em;
 }
+
+.jornada{
+    height: 100vh;
+    padding: 15%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.jornada .tilt{
+    text-align: center;
+    margin-top: -60%;
+    
+}
+
+/* .jornada .img{
+     height: 5%;
+    width: 4%;
+    padding: 4px;
+} */
+
+.sec-3 .bloco{
+    margin-top: -10%;
+    height: 40%;
+    width: 80%;
+    display: flex;
+}
+
+.sec-3 .bloco-2{
+    margin-top: -10%;
+    height: 40%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sec-3 .cartao{
+    background-color: var(--cor0);
+    height: 5em;
+    width: 20em;
+    margin: 0.5em;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.459);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    text-align: center;
+}
+
 
 .sec-4 .bloco-square{
     height: 50%;
@@ -59,7 +109,7 @@
 
 }
 
-.square{
+.sec-4 .square{
     height: 80%;
     width: 30%;
     margin: 2%;
@@ -73,54 +123,25 @@
     box-shadow: 1px  10px 12px rgba(0, 0, 0, 0.236);
 }
 
-.square h2{
+.sec-4 .square h2{
     font-size: 1.6vw;
     color: black;
 }
 
-.square h3{
+.sec-4 .square h3{
     padding: 5%;
     font-size: 1.2vw;
     font-weight: 500;
     color: black;
 }
 
-.square:hover{
+.sec-4 .square:hover{
     height: 82%;
 }
   
 
-.sec-3 .bloco-jornada-pt1{
-    margin-top: -20%;
-    height: 30%;
-    width: 80%;
-    display: flex;
 
-    background-color: rgb(127, 150, 255);
-}
 
-.sec-3 .bloco-jornada-pt2{
-    margin-top: 90%;
-    height: 30%;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    background-color: rgb(0, 37, 202);
-}
-
-.cartao{
-    height: 80%;
-    width: 30%;
-    margin: 2%;
-    box-shadow: 1%, 1%, 1% 1% black;
-    background-color: var(--cor3);
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 1px  10px 12px rgba(0, 0, 0, 0.236);
-}
 
 /* .jornada{
     height: 50%;
