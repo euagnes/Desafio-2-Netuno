@@ -1,5 +1,9 @@
 @media screen and (max-width: 860px) {
 
+    header nav{
+        display: none;
+    }
+
     .sec-2 .img-2{
         display: none;
     }
@@ -21,6 +25,9 @@
         width: 80%;
     }
 
+    .bloco{
+        display: none;
+    }
 
     footer .menu{
         display: none;
