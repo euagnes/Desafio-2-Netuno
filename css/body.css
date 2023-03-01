@@ -439,7 +439,7 @@ form .form-pt3 div{
 }
 
 .sec-3-j .titulo h2{
-    background-image: linear-gradient(to right, var(--cor0), transparent 94%);
+    background-image: linear-gradient(to right, var(--cor0), transparent 100%);
     font-size: 6vh;
     font-weight: bold;
     background-clip: text;
@@ -495,6 +495,10 @@ form .form-pt3 div{
     margin-left: 2%;
     border-radius: 1rem;
     margin-right: 1%;
+
+}
+.cartao h3{
+    color: #ffffff
 
 }
 .cartao div img{
