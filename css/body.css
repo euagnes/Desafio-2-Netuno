@@ -59,16 +59,7 @@ body main{
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-.sombra::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 5vh;
-    border: 1vw solid transparent;
-    background: linear-gradient(45deg, var(--cor3),transparent, transparent, var(--cor3)) border-box;
-    -webkit-mask: linear-gradient(var(--cor3) 0 0), padding-box linear-gradient(var(--cor3) 0 0);
-    mask-composite: exclude;
-}
+
 
 .sec-1 .sombra form{
     height: 96%;
@@ -81,10 +72,10 @@ body main{
     height: 96vh;
     width: 95%;
     border-radius: 3%;
-    padding: 2px;
     align-items: center;
     color: var(--cor2);
     background-color: var(--cor3);
+    z-index: 1000;
 }
 
 form h2{
@@ -110,17 +101,12 @@ form .input{
     margin: 10px 0px 11px 24px;
 }
 
-form .input .cartao .img{
-    height: 5%;
+form .form-pt1 .input img{
+    height: 10%;
     width: 4%;
     padding: 4px;
-}
+} 
 
-form .input .icon-email{
-    height: 10%;
-    width: 5%;
-    padding: 4px;
-}
 
 form .input input{
     width: 80%;
@@ -137,28 +123,146 @@ form {
 
 form .form-pt2{
     background-color: var(--cor0);
-    padding: 10%;
-    margin-left: -0.3%;
-    margin-right: -0.5%;
-    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 form .form-pt2 h2{
+    width: 100%;
     font-size: 1.1em;
     color: #ffffff;
 }
+form .form-pt2 .campo{
+    width: 90%;
+    justify-content: space-around;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+form .form-pt2 .campo label{
+    font-size: 1.25vw;
+    color: var(--cor3);
+}
+
+form .form-pt2 .campo label input{
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.1rem solid var(--cor3);
+    border-radius: 5%;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: #ffffff;
+}  
+form .form-pt2 .campo label input:checked{
+    background-color: var(--cor0);
+}
+
+form .form-pt3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
 
 
+}
+form .form-pt3 div{
+    height: 50%;
+    width: 100%;
+}
 
-/* .sec-1 span{
+.form-pt3 .pt3-1 h2{
+    font-size: 1.2em;
+    color: var(--cor0);
+}
+
+.form-pt3 .pt3-1 label{
+    font-size: 1.25vw;
+    color: #616161bd;
+    margin-left: 12%;
+}
+
+.form-pt3 .pt3-1 label input{
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.1rem solid var(--cor0);
+    border-radius: 5%;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: var(--cor3);
+}  form .form-pt3 input:checked{
+    background-color: var(--cor0);
+
+}
+
+
+.risco-form{
+    max-height: 0.1rem;
+    max-width: 70%;
+    width: 70%;
+    margin-left: 15%;
+    background-color: black;
+    opacity: 0.2;
+}
+
+
+.form-pt3 .pt3-2{
+    height: 50%;
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--cor0);
+}
+
+.form-pt3 .pt3-2 .btn-form{
+    background-color:var(--cor0) ;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    border-radius: .81rem;
+    min-height: 40%;
+}
+.form-pt3 .pt3-2 p{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.form-pt3 .pt3-2 .dif{
+    color: black;
+    opacity: 0.5;
+}
+
+.form-pt3 .pt3-2 .dif a{
+    color: var(--cor0);
+}
+
+
+/* .form-pt3 span{
+
+} */
+
+.sec-1 span{
     position: absolute;
     display: flex;
     justify-content: flex-end;
     left: 0;
+    top:51.8%;
     height: 100%;
     width: 100%;
-    z-index: 1;
-} */
+    z-index: 0;
+}
 
 .sec-1 span img{
     position: absolute;
