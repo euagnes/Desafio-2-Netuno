@@ -1,4 +1,4 @@
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 860px) {
 
     .sec-2 .img-2{
         display: none;
@@ -7,29 +7,30 @@
     .sec-3 .img-3{
         display: none;
     }
-
     .sec-1 .sombra{
-        height: 72vh;
-        width: 35%;
-        /* POSIÇÂO */
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        /* ORGANIZANDO DENTRO */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+        display: none;
+    }
+    .sec-1 span{
+        display: none;
     }
 
-    #form{
-        height: 70vh;
-        width: 100%;
-        border-radius: 3%;
-        padding: 2px;
-        align-items: center;
-        color: var(--cor2);
-        background-color: var(--cor3);
+    .sec-3 .blco-card{
+        display: none;
+    }
+    .sec-3 .sec-3-rool{
+        width: 80%;
+    }
+
+
+    footer .menu{
+        display: none;
+    }
+
+    footer .btn-footer{
+        display: none;
+    }
+    footer{
+        justify-content: space-around;
     }
 
 
