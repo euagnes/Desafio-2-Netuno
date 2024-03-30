@@ -1,50 +1,43 @@
 body{
     background-color: var(--cor0);
     flex-direction: column;
-
 }
 
 body main{
-    margin-top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--cor0);
-
 }
 
 .sec-1{
-    height: 110vh;
     width: 100%;
-    /* background-color: rgb(0, 174, 255); */
     display: flex;
     align-items:center;
     justify-content: flex-start;
 }
+.titulo{
+    font-size: 40px!important;
+}
 
 .sec-1 .img-1{
-    background-image: url(../Assets_Netuno/img/bannertopo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 120vw;
-    height: 110vh;
+    width: 100%;
     margin-left: -10vw;
-    margin-top: -5vh;
 }
 
 .sec-1 .sombra{
-    height: 100vh;
-    width: 35%;
-    /* POSIÇÂO */
+    width: 400px;
     position: absolute;
     top: 25%;
-    left: 50%;
-    /* ORGANIZANDO DENTRO */
+    right: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px;
 
 }
 .sec-1 .sombra::before {
@@ -58,96 +51,96 @@ body main{
     -webkit-mask: linear-gradient(var(--cor3) 0 0), padding-box linear-gradient(var(--cor3) 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+    opacity:0.6;
 }
-
-
 .sec-1 .sombra form{
-    height: 96%;
     background-color: var(--cor3);
-    border-radius: 5%;
-    
-}
-
-#form{
-    height: 96vh;
-    width: 95%;
-    border-radius: 3%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
     align-items: center;
-    color: var(--cor2);
-    background-color: var(--cor3);
-    z-index: 1000;
+    border-radius: 10px;
 }
-
+#form{
+    z-index: 10;
+}
 form h2{
-    margin-top: 5%;
-    margin-bottom: 3%;
-    margin-left: 12%;
-    font-size: 1.8em;
-    color: rgba(0, 0, 0, 0.438);
+    font-size: 20px;
+    color: #CECECE;
 }
 form h3{
-    margin-left: 12%;
-    font-size: 1.1em;
+    font-size: 14px;
     color: var(--cor0);
-    
 }
-
 form .input{
-    width: 80%;
-    min-width: 80%;
-    border-radius: 0.5em;
-    border: 0.1px rgba(70, 69, 69, 0.575) solid;
-    padding: 6px;
-    margin: 10px 0px 11px 24px;
+    width: 350px;
+    border-radius: 6px;
+    border: 0.1px #CECECE solid;
+    padding: 5px 0px 5px 15px;
+    display:flex;
+    align-items:center;
+    justify-content: start;
+    gap:10px;
 }
-
-form .form-pt1 .input img{
-    height: 10%;
-    width: 4%;
-    padding: 4px;
+.input-container input{
+}
+.input-container{
+    display:flex;
+    flex-direction:column;
+    gap: 10px
+}
+.input img{
+    height: 13px;
 } 
-
-
+.form-pt1{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:10px;
+    padding: 30px 15px 30px 15px;
+}
 form .input input{
     width: 80%;
     border: none;
     outline: none;
-    transform: translateY(-40%);
 }
-
 form {
     width: 100%;
     color: rgb(8, 8, 8);
     background-color: var(--cor0);
 }
-
 form .form-pt2{
+    padding: 15px 15px 30px 15px;
     background-color: var(--cor0);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap:20px;
 }
-
 form .form-pt2 h2{
     width: 100%;
-    font-size: 1.1em;
+    font-size: 14px;
     color: #ffffff;
 }
+
 form .form-pt2 .campo{
-    width: 90%;
-    justify-content: space-around;
-    height: 20vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-contain:center;
+    gap:8px;
 
 }
 form .form-pt2 .campo label{
-    font-size: 1.25vw;
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
     color: var(--cor3);
+    min-width: 80px;
 }
-
 form .form-pt2 .campo label input{
     appearance: none;
     width: 1.2rem;
@@ -164,13 +157,11 @@ form .form-pt2 .campo label input:checked{
 }
 
 form .form-pt3{
+    padding: 20px 15px 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-
-
 }
 form .form-pt3 div{
     height: 50%;
@@ -178,14 +169,22 @@ form .form-pt3 div{
 }
 
 .form-pt3 .pt3-1 h2{
-    font-size: 1.2em;
+    font-size: 14px;
     color: var(--cor0);
+}
+.form-pt3 .pt3-1 div{
+    display:flex;
+    gap: 20px;
+    margin-top: 10px;
 }
 
 .form-pt3 .pt3-1 label{
-    font-size: 1.25vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    font-size: 14px;
     color: #616161bd;
-    margin-left: 12%;
 }
 
 .form-pt3 .pt3-1 label input{
@@ -200,44 +199,39 @@ form .form-pt3 div{
     background-color: var(--cor3);
 }  form .form-pt3 input:checked{
     background-color: var(--cor0);
-
 }
-
-
 .risco-form{
-    max-height: 0.1rem;
-    max-width: 70%;
-    width: 70%;
-    margin-left: 15%;
+    height: 1px;
+    width: 90%;
+    margin-top: 30px;
     background-color: black;
     opacity: 0.2;
 }
-
-
 .form-pt3 .pt3-2{
-    height: 50%;
     width: 90%;
-    margin-top: 2%;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
     text-align: center;
     color: var(--cor0);
 }
-
 .form-pt3 .pt3-2 .btn-form{
-    background-color:var(--cor0) ;
+    background-color:var(--cor0);
     align-items: center;
     justify-content: center;
-    margin: auto;
     display: flex;
-    border-radius: .81rem;
-    min-height: 40%;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size:18px;
+    font-weight: 700;
+    margin-top: 20px;
 }
-.form-pt3 .pt3-2 p{
-    margin-top: 2%;
-    margin-bottom: 1%;
+.form-pt3 .pt3-2 p,
+.form-pt3 .pt3-2 p a{
+    font-size:10px;
 }
 .form-pt3 .pt3-2 .dif{
     color: black;
@@ -247,18 +241,16 @@ form .form-pt3 div{
 .form-pt3 .pt3-2 .dif a{
     color: var(--cor0);
 }
-
-.sec-1 span{
+.sec-1 > span{
     position: absolute;
     display: flex;
     justify-content: flex-end;
     left: 0;
-    top:51.8%;
+    top:24.8%;
     height: 100%;
     width: 100%;
     z-index: 0;
 }
-
 .sec-1 span img{
     position: absolute;
     height: 30%;
@@ -266,73 +258,44 @@ form .form-pt3 div{
     top: 30%;
 }
 
-.sec-1 .textoCadastro{
-    margin-top: 5%;
-    margin-left: 10%;
-    font-size: 1.8vw;
-    color:#00000067;
-}
-
-.sec-1 .textInicio{
-    margin-top: 2%;
-    margin-left: 10%;
-    font-size: 1.1vw;
-    color: var(--cor0);
-    
-}
-
-
-.sec-1 .input0 {
-    margin-top: 5%;
-    padding: 1vw;
-    margin-left: 2vw;
-    box-sizing: border-box;
-    border: 0.1vh solid #6161614f;
-    border-radius: 0.5vw;
-    font-size: 2.5vh;
-}
-
-
 .sec-2{
-    height: 80vh;
     width: 80%;
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
+    padding: 3rem 0;
+}
+.sec-2 .container{
+}
+.sec-2 .container div{
+    width: 45%;
 }
 
-.sec-2 .img-2{
-    background-image: url(../Assets_Netuno/img/dev.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
-    height: 90%;
+.sec-2 .img-2 img{
+    width:100%;
+    background: rgb(84,177,234);
+    background: radial-gradient(circle, rgba(84,177,234,1) 0%, rgba(255,255,255,0) 70%);
 }
+  
 
 .sec-2 .texto-sec2{
-    margin-top: -10%;
-    height: 50%;
-    width: 40%;
     color: var(--cor3);
 }
 
 .sec-2 .texto-sec2 h2{
-    font-size: 3vw;
+    font-size: 18px;
     color: var(--cor1);
 }
 
 .sec-2 .texto-sec2 p{
-    font-size: 1.2vw;
+    font-size: 1rem;
     color: var(--cor3);
     padding: 0.4rem;
 }
 
 .sec-2 .texto-sec2 p strong{
-    font-size: 1.2vw;
+    font-size: 1.rem;
 }
 
 .sec-3{
-    height: 120vh;
+    padding: 3rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -346,28 +309,22 @@ form .form-pt3 div{
     align-items:center;
     justify-content: space-around;
 }
-
-.sec-3 .texto-sec3{
-    height: 70%;
-    max-width: 35%;
-    margin-left: -20%;
+.sec-3 .sec-3-rool > div{
+    width: 45%;
+}
+.sec-3 .container{
+    flex-direction:column;
+    display:flex;
+    gap: 10%;
 }
 
-.sec-3 .img-3 {
-    background-image: url(../Assets_Netuno/img/Container2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
-    height: 100vh;
-    margin-left: 6%;
-
-        
-   
+.sec-3 img {
+    width: 100%;
 }
 
 .sec-3 .titulo-sec3 h2{
     background-image: linear-gradient(to right, var(--cor0), transparent 94%);
-    font-size: 6vh;
+    font-size: 40px;
     font-weight: bold;
     background-clip: text;
     -webkit-background-clip: text;
@@ -375,9 +332,8 @@ form .form-pt3 div{
 }
     
 .sec-3 .subtitulo h2{
-    font-size: 2.9vh;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 3vh;
 }  
 
 .sec-3 .risco{
@@ -403,14 +359,6 @@ form .form-pt3 div{
     margin-top: 3vh;
 }    
 
-.sec-3 .texto-sec3 {
-    @media screen and (max-width: 800px) 
-    margin-top: 30%;
-    width: 90%;
-    height: 50vh;
-    margin-right: 10vh;
-} 
-
 .sec-3 .tilt h2{
     background-image: linear-gradient(to right, var(--cor0), transparent 170%);
     font-size: 6vh;
@@ -422,7 +370,7 @@ form .form-pt3 div{
 }
 
 .sec-3-j{
-    height: 100vh;
+    padding:3rem 0;
     background-color: var(--cor3);
     width: 100%;
     display: flex;
@@ -440,7 +388,7 @@ form .form-pt3 div{
 
 .sec-3-j .titulo h2{
     background-image: linear-gradient(to right, var(--cor0), transparent 100%);
-    font-size: 6vh;
+    font-size: 40px;
     font-weight: bold;
     background-clip: text;
     -webkit-background-clip: text;
@@ -449,17 +397,13 @@ form .form-pt3 div{
 }
 
 .sec-3-j .bloco{
-    width: 90vw;
-    height: 35vh;
+    width: 90%;
     margin-top: 2%;
     margin-bottom: 2%;
     justify-content: center;
 }
 
 .sec-3-j .btn{
-    height: 10vh;
-    margin: 5%;
-    width: 30vw;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -467,18 +411,18 @@ form .form-pt3 div{
     background-color: var(--cor2);
     display: flex;
     font-weight: 800;
-    border-radius: 1rem
+    border-radius: 1rem;
 }
 .sec-3-j .btn strong{
     color: var(--cor0);
 }
-.sec-3-j img{
+.sec-3-j > img{
     margin-top: 5%;
 }
 
 .cartao{
     width: 50%;
-    height: 11vh;
+    height: 100px;
     margin: 1%;
     border-radius: 1rem;
     display: flex;
@@ -489,24 +433,44 @@ form .form-pt3 div{
     justify-content: space-around;
 }
 .cartao div{
-    width: 20%;
-    height: 70%;
+    width: 100px;
+    height: 50px;
     background-color: #ffffff;
     margin-left: 2%;
     border-radius: 1rem;
-    margin-right: 1%;
-
+    margin-right: 1%;    
 }
+
+.jornada-3 > img {
+    margin-top: 20px;
+}
+.btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 10px;
+    padding:10px 20px 10px 20px;
+    background-color: black;
+    color: var(--cor3);
+}
+
+.btn button:hover{
+    background-color: var(--cor1);
+    color: black;
+}
+
 .cartao h3{
     color: #ffffff
-
+}
+.cartao div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
 }
 .cartao div img{
-    width: 80%;
-    height: 80%;
-
-    
-
+    width:80%;
 }
 
 .sec-3-j .bloco .bloco-1{
@@ -524,20 +488,36 @@ form .form-pt3 div{
 
 .sec-4 {
     width: 100%;
-    height: 70vh;
     color: var(--cor3);
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+.sec-4 .img-r{
+  position:absolute;
+  right:0;
+}
+.sec-4 .img-l{
+    position:absolute;
+    left:0;
+    z-index: 0;
+}
+.sec-4 .container{
+ flex-direction: column;
+ padding: 50px 0;
+}
+.sec-4 .square{
+    min-height: 200px;
+}
+.sec-4 .square h3{
+    font-size: 15px;
 }
 
 .sec-4 .objetivos {
-    font-size: 6vh;
+    font-size: 40px;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    margin-top: 8vh;
 }
-
 
 

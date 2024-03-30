@@ -1,12 +1,20 @@
 footer{
     display: flex;
-    width: 100%;
-    height: 45vh;
-    color: var(--cor3);
     flex-direction: row;
-    background-color: black;
     justify-content: center;
     align-items: center;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+    height: 45vh;
+    background-color: black;
+    width: 100%;
+    color: var(--cor3);
 }
 
 footer .rodape{ 

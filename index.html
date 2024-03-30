@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netuno</title>
     <link rel="shortcut icon" href="nmetuno/Assets_Netuno/assets/fiv.png"type="image/x-icon">
     <link rel="shortcut icon" href="Assets_Netuno/icones/diamante.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -12,72 +11,81 @@
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/resp.css">
+    <title>Projeto Netuno</title>
+    <meta name="description" content="O Projeto Netuno, idealizado pela Fasters, visa gerar oportunidades de carreira para novos profissionais. Saiba mais.">
+    <meta property="og:title" content="Projeto Netuno: Reduzindo o Estresse no Recrutamento de Profissionais de TI">
+    <meta property="og:description" content="O Projeto Netuno, idealizado pela Fasters, visa reduzir o estresse causado pelo recrutamento e turnover na área de tecnologia, gerando oportunidades de carreira para novos profissionais. Saiba mais.">
+    <meta property="og:image" content="Assets_Netuno/assets/logo.png">
 </head>
 
 <body>
     <header>
         <div>
-            <div class="logo"></div>
+            <img class="logo" src="Assets_Netuno/assets/logo.png" alt="Logo Netuno">
             <nav>
                 <a href="#">O Projeto</a>
                 <a href="#">O Problema</a>
                 <a href="#">Sua Jornada</a>
                 <a href="#">Objetivos</a>
             </nav>
-            <a class="btn"href="">Processo Seletivo</a>
+            <button class="btn"href="">Processo Seletivo</button>
         </div>
         <div class="risco-header"></div>
     </header> 
 
     <main>
         <section class="sec-1">
-            <div class="img-1"></div>
+            <div class="img-1">
+                <img src="Assets_Netuno/img/bannertopo.png" alt="">
+            </div>
             <div class="sombra">
                 <div id="form">
                     <form action="">
                         <div class="form-pt1">
                             <h2 class="title">Formulário de Cadastro</h2>
                             <h3 class="title">Preencha seus dados</h3>
-                            <div class="input">
-                                <img src="Assets_Netuno/icones/user.png" alt="user-icon">
-                                <input id="Nome Completo*" name="Nome Completo" placeholder="Nome Completo" type="text">
-                            </div>
-                            <div class="input">
-                              <img src="Assets_Netuno/icones/mail.png" class="icon-email" alt="email-icon">
-                              <input id="e-mail" name="e-mail" placeholder="E-mail" type="text">
-                            </div>
-                            <div class="input">
-                                <img src="Assets_Netuno/icones/state.png" class="icon-email" alt="email-icon">
-                                <input type="text" placeholder="Estado" list="estados">
-                                <datalist id="estados">
-                                    <option value="Acre" selected>AC</option>
-                                    <option value="Alagoas">AL</option>
-                                    <option value="Amapá">AP</option>
-                                    <option value="Amazonas">AM</option>
-                                    <option value="Bahia">BA</option>
-                                    <option value="Ceará">CE</option>
-                                    <option value="Distrito Federal">DF</option>
-                                    <option value="Espírito Santo">ES</option>
-                                    <option value="Goiás">GO</option>
-                                    <option value="Maranhão">MA</option>
-                                    <option value="Mato Grosso">MT</option>
-                                    <option value="Mato Grosso do Sul">MS</option>
-                                    <option value="Minas Gerais">MG</option>
-                                    <option value="Pará">PA</option>
-                                    <option value="Paraíba">PB</option>
-                                    <option value="Paraná">PR</option>
-                                    <option value="Pernambuco">PE</option>
-                                    <option value="Piauí">PI</option>
-                                    <option value="Rio de Janeiro">RJ</option>
-                                    <option value="Rio Grande do Norte">RN</option>
-                                    <option value="Rio Grande do Sul">RS</option>
-                                    <option value="Rondônia">RO</option>
-                                    <option value="Roraima">RR</option>
-                                    <option value="Santa Catarina">SC</option>
-                                    <option value="São Paulo">SP</option>
-                                    <option value="Sergipe">SE</option>
-                                    <option value="Tocantins">TO</option>
-                                </datalist>
+                            <div class="input-container">
+                                <div class="input">
+                                    <img src="Assets_Netuno/icones/user.png" alt="user-icon">
+                                    <input id="Nome Completo*" name="Nome Completo" placeholder="Nome Completo" type="text">
+                                </div>
+                                <div class="input">
+                                    <img src="Assets_Netuno/icones/mail.png" class="icon-email" alt="email-icon">
+                                    <input id="e-mail" name="e-mail" placeholder="E-mail" type="text">
+                                  </div>
+                                  <div class="input">
+                                    <img src="Assets_Netuno/icones/state.png" class="icon-email" alt="email-icon">
+                                    <input type="text" placeholder="Estado" list="estados">
+                                    <datalist id="estados">
+                                        <option value="Acre" selected>AC</option>
+                                        <option value="Alagoas">AL</option>
+                                        <option value="Amapá">AP</option>
+                                        <option value="Amazonas">AM</option>
+                                        <option value="Bahia">BA</option>
+                                        <option value="Ceará">CE</option>
+                                        <option value="Distrito Federal">DF</option>
+                                        <option value="Espírito Santo">ES</option>
+                                        <option value="Goiás">GO</option>
+                                        <option value="Maranhão">MA</option>
+                                        <option value="Mato Grosso">MT</option>
+                                        <option value="Mato Grosso do Sul">MS</option>
+                                        <option value="Minas Gerais">MG</option>
+                                        <option value="Pará">PA</option>
+                                        <option value="Paraíba">PB</option>
+                                        <option value="Paraná">PR</option>
+                                        <option value="Pernambuco">PE</option>
+                                        <option value="Piauí">PI</option>
+                                        <option value="Rio de Janeiro">RJ</option>
+                                        <option value="Rio Grande do Norte">RN</option>
+                                        <option value="Rio Grande do Sul">RS</option>
+                                        <option value="Rondônia">RO</option>
+                                        <option value="Roraima">RR</option>
+                                        <option value="Santa Catarina">SC</option>
+                                        <option value="São Paulo">SP</option>
+                                        <option value="Sergipe">SE</option>
+                                        <option value="Tocantins">TO</option>
+                                    </datalist>
+                                </div>
                             </div>
                         </div>
                         <div class="form-pt2">
@@ -132,23 +140,23 @@
                                         outras
                                     </label>
                                 </div>
-                        </div>
-                
+                        </div>  
                         <div class="form-pt3">
                             <div class="pt3-1">
                                 <h2>
                                     Já trabalhou com desenvolvimento?
                                 </h2>
-
-                                <label class="N" for="opcao14"> 
-                                    <input class="N" type="radio" id="nao" name="option" value="">
-                                    Não
-                                </label>
-
-                                <label class="S" for="opcao13"> 
-                                    <input class="S" type="radio" id="sim" name="option" value="">
-                                    Sim
-                                </label>
+                                <div>
+                                    <label class="N" for="opcao14"> 
+                                        <input class="N" type="radio" id="nao" name="option" value="">
+                                        Não
+                                    </label>
+                                    
+                                    <label class="S" for="opcao13"> 
+                                        <input class="S" type="radio" id="sim" name="option" value="">
+                                        Sim
+                                    </label>
+                                </div>
 
                             </div>
                             <span class="risco-form"></span>
@@ -167,95 +175,101 @@
                 <img src="Assets_Netuno/Elements/vector4.png" alt="">
             </span>
         </section>
-
         <section class="sec-2">
-            <div class="img-2"></div>
+            <div class="container">
+                <div class="img-2">
+                    <img src="Assets_Netuno/img/dev.png" alt="dev">
+                </div>
 
-            <div class="texto-sec2">
-                <h2 class="titulo-sec2">O Projeto</h2>
-                <p>
-                    Com o "novo normal" causado pela pandemia dos
-                    últimos anos, mais empresas no mundo todo têm aberto
-                    oportunidades no modelo Home Office. 
-                </p>
-                 <p>
-                    Alinhado a depreciação da moeda local, temos um alto
-                    índice de profissionais migrando para trabalhos em
-                    outros países.
-                 </p>   
-                 <p><strong>
-                    O projeto Netuno, idealizado pela Fasters, tem por
-                    objetivo reduzir os estresses causados por recrutamento
-                    e turn over na área de tecnologia, bem como gerar
-                    oportunidades de carreira para novos profissionais.
-                 </strong>
-                </p>
+                <div class="texto-sec2">
+                    <h2 class="titulo">O Projeto</h2>
+                    <p>
+                        Com o "novo normal" causado pela pandemia dos
+                        últimos anos, mais empresas no mundo todo têm aberto
+                        oportunidades no modelo Home Office. 
+                    </p>
+                    <p>
+                        Alinhado a depreciação da moeda local, temos um alto
+                        índice de profissionais migrando para trabalhos em
+                        outros países.
+                    </p>   
+                    <p><strong>
+                        O projeto Netuno, idealizado pela Fasters, tem por
+                        objetivo reduzir os estresses causados por recrutamento
+                        e turn over na área de tecnologia, bem como gerar
+                        oportunidades de carreira para novos profissionais.
+                    </strong>
+                    </p>
+                </div>
             </div>
         </section>
         
         <section class="sec-3">
-            <div class="sec-3-rool">
-                <div class="img-3"></div>
-                <div class="texto-sec3">
-                    <div class="titulo-sec3">
-                        <h2 class="titulo-sec3">O Problema</h2>
+            <div class="container"> 
+                <div class="sec-3-rool">
+                    <div>
+                        <img src="Assets_Netuno/img/Container2.png" alt="">
                     </div>
-                    <div class="paragrafo-sec3">
-                        <div class="subtitulo">
-                            <h2 class="subtitulo">Falta de profissionais de TI no Mercado
-                                brasileiro: um problema que demanda
-                                atenção urgente.
-                            </h2>
+                    <div class="texto-sec3">
+                        <div class="titulo-sec3">
+                            <h2 class="titulo-sec3">O Problema</h2>
                         </div>
-    
-                        <span class="risco"></span>
-    
-                        <div class="texto3">
-                            <h3 class="texto3">
-                                Estima-se que atualmente tenhamos um déficit de 408
-                                mil postos de trabalho, com perdas se acumulando na
-                                casa dos R$167 bilhões, de acordo com a Softex, uma
-                                organização social voltada ao fomento da área de TI.
-                            </h3>
-                        
-                            <div class="formato-bold">
-                                <p class="formato-bold">
-                                    Um dos principais fatores dessa falta de profissionais é
-                                    o êxodo de profissionais para o exterior.
-                                </p>
+                        <div class="paragrafo-sec3">
+                            <div class="subtitulo">
+                                <h2 class="subtitulo">Falta de profissionais de TI no Mercado
+                                    brasileiro: um problema que demanda
+                                    atenção urgente.
+                                </h2>
                             </div>
+        
+                            <span class="risco"></span>
+        
+                            <div class="texto3">
+                                <h3 class="texto3">
+                                    Estima-se que atualmente tenhamos um déficit de 408
+                                    mil postos de trabalho, com perdas se acumulando na
+                                    casa dos R$167 bilhões, de acordo com a Softex, uma
+                                    organização social voltada ao fomento da área de TI.
+                                </h3>
+                            
+                                <div class="formato-bold">
+                                    <p class="formato-bold">
+                                        Um dos principais fatores dessa falta de profissionais é
+                                        o êxodo de profissionais para o exterior.
+                                    </p>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
+            <div class="blco-card">
+                    <div class="card">
+                        <h2>Oportunidade</h2>
+                        <h3>
+                            Acreditamos que a combinação
+                            de interesse, dedicação e
+                            (oportunidade pode causar um
+                            grande impacto nas pessoas, nas organizaçãoes e no mundo.
+                        </h3>
+                    </div>
+                    <div class="card">
+                        <h2>Comunidade</h2>
+                        <h3>Dentro de um grupo de pessoas
+                            mais experientes e acessíveis, a
+                            curva de aprendizado ocorre de
+                            forma mais rápida, fuída e
+                            eficiente.</h3>
+                    </div>
+                    <div class="card">
+                        <h2>Experiencia Real</h2>
+                        <h3>Entendemos que somente as
+                            experiências reais poderão
+                            trazer a bagagem que a teoria
+                            não o pode fazer.</h3>
+                    </div>
             </div>
-           <div class="blco-card">
-                <div class="card">
-                    <h2>Oportunidade</h2>
-                    <h3>
-                        Acreditamos que a combinação
-                        de interesse, dedicação e
-                        (oportunidade pode causar um
-                        grande impacto nas pessoas, nas organizaçãoes e no mundo.
-                    </h3>
-                </div>
-                <div class="card">
-                    <h2>Comunidade</h2>
-                    <h3>Dentro de um grupo de pessoas
-                        mais experientes e acessíveis, a
-                        curva de aprendizado ocorre de
-                        forma mais rápida, fuída e
-                        eficiente.</h3>
-                </div>
-                <div class="card">
-                    <h2>Experiencia Real</h2>
-                    <h3>Entendemos que somente as
-                        experiências reais poderão
-                        trazer a bagagem que a teoria
-                        não o pode fazer.</h3>
-                </div>
-           </div>
-
+        </div>
 
         </section>
 
@@ -309,7 +323,7 @@
 
                 </div>
                 <div class="btn">
-                    <a href="">Quero me cadastrar para o <strong>Processo Seletivo</strong></a>
+                    <button href="">Quero me cadastrar para o <strong> Processo Seletivo</strong> <img src="Assets_Netuno/Elements/carbon_choose-item.png" alt=""></button>
                 </div>
                 <img src="Assets_Netuno/Elements/Vector1.png" alt="vetor 1">
         </div>
@@ -317,42 +331,46 @@
         </section>
 
         <section class="sec-4">
-            <div class="objetivos">
-                <h2 class="objetivos">Objetivos</h2>
-            </div>
-    
-            <div class="bloco-square">
-                <div class="square">
-                    <h2>Otimizar</h2>
-                    <h3>
-                        Otimizar todo processo de
-                        contratação chegando a
-                        contribuir com uma economia interessadas em ingressar na
-                        de 40% no processo de recrutamento.>
-                    </h3>
+            <img class="img-l" src="Assets_Netuno/Elements/Frame 2.png" alt="">
+            <div class="container">
+                <div class="objetivos">
+                    <h2 class="objetivos">Objetivos</h2>
                 </div>
-        
-                <div class="square">
-                    <h2>Gerar</h2>
-                    <h3>
-                        Gerar novas oportunidades de
-                        carreira para pessoas interessadas em ingressar
-                        na areás que esteja descontente.
-                    </h3>
+                <div class="bloco-square">
+                    <div class="square">
+                        <h2>Otimizar</h2>
+                        <h3>
+                            Otimizar todo processo de
+                            contratação chegando a
+                            contribuir com uma economia interessadas em ingressar na
+                            de 40% no processo de recrutamento.>
+                        </h3>
+                    </div>
+            
+                    <div class="square">
+                        <h2>Gerar</h2>
+                        <h3>
+                            Gerar novas oportunidades de
+                            carreira para pessoas interessadas em ingressar
+                            na areás que esteja descontente.
+                        </h3>
+                    </div>
+            
+                    <div class="square">
+                        <h2>Filtrar</h2>
+                        <h3>
+                            criar oportunidades brilhantes para profissionais que
+                            se destacam junto a parceiros estratégicos de negócios.
+                        </h3>
+                    </div>     
                 </div>
-        
-                <div class="square">
-                    <h2>Filtrar</h2>
-                    <h3>
-                        criar oportunidades brilhantes para profissionais que
-                        se destacam junto a parceiros estratégicos de negócios.
-                    </h3>
-                </div>     
             </div>
+            <img class="img-r" src="Assets_Netuno/Elements/Frame 3.png" alt="">
         </section>
     </main>
 
-    <Footer>
+    <footer>
+        <div>
             <div class="rodape">
                 <a href="">
                     <img src="Assets_Netuno/assets/logo+slogan.png" alt="">
@@ -403,8 +421,9 @@
                     <p>11 91234.5678</p>
                     <p>contato@netuno.com.br</p>
             </div>
-        </div>   
-    </Footer>
+        </div>
+    </div>   
+    </footer>
 
 
 </body>
