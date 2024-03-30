@@ -1,29 +1,25 @@
  @media screen and (max-width: 1000px) {
 
 .sec-4 .img-r {
-    position: absolute;
-    right: 0;
     display: none;
 }
 
 .sec-4 .img-l {
-    position: absolute;
-    left: 0;
-    z-index: 0;
     display: none;
 }
 
 .sec-1 span img{
-    position: absolute;
-    width: 19%;
-    top: 33%;
     display: none;
 }
 
 .sec-1 .img-1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 50%;
-    margin-left: -60vw;
+    display: none;
 }
+
+.sec-1{
+    padding: 50%;
+    display: flex;
+}
+
+
 } 
