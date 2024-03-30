@@ -150,10 +150,10 @@ form .form-pt2 .campo label input{
     outline: none;
     cursor: pointer;
     border-radius: 0.2rem;
-    background-color: #ffffff;
+    background-color: var(--cor0);
 }  
 form .form-pt2 .campo label input:checked{
-    background-color: var(--cor0);
+    background-color: var(--cor3);
 }
 
 form .form-pt3{
@@ -262,8 +262,7 @@ form .form-pt3 div{
     width: 80%;
     padding: 3rem 0;
 }
-.sec-2 .container{
-}
+
 .sec-2 .container div{
     width: 45%;
 }
@@ -274,7 +273,6 @@ form .form-pt3 div{
     background: radial-gradient(circle, rgba(84,177,234,1) 0%, rgba(255,255,255,0) 70%);
 }
   
-
 .sec-2 .texto-sec2{
     color: var(--cor3);
 }
@@ -510,7 +508,7 @@ form .form-pt3 div{
     min-height: 200px;
 }
 .sec-4 .square h3{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .sec-4 .objetivos {

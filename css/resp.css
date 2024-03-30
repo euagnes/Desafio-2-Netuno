@@ -1,44 +1,15 @@
-/* @media screen and (max-width: 860px) {
+ @media screen and (max-width: 1000px) {
 
-    header nav{
-        display: none;
-    }
+.sec-4 .img-r {
+    position: absolute;
+    right: 0;
+    display: none;
+}
 
-    .sec-2 .img-2{
-        display: none;
-    }
-
-    .sec-3 .img-3{
-        display: none;
-    }
-    .sec-1 .sombra{
-        display: none;
-    }
-    .sec-1 span{
-        display: none;
-    }
-
-    .sec-3 .blco-card{
-        display: none;
-    }
-    .sec-3 .sec-3-rool{
-        width: 80%;
-    }
-
-    .bloco{
-        display: none;
-    }
-
-    footer .menu{
-        display: none;
-    }
-
-    footer .btn-footer{
-        display: none;
-    }
-    footer{
-        justify-content: space-around;
-    }
-
-
-} */
+.sec-4 .img-l {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+} 

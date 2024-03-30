@@ -78,13 +78,10 @@ section{
 
 .card h3{
     padding: 5%;
-    font-size: 1.2vw;
+    font-size: 13px;
     font-weight: 500;
 }
 
-.card:hover{
-    height: 18em;
-}
 
 .jornada{
     height: 100vh;
@@ -99,12 +96,6 @@ section{
     margin-top: -60%;
     
 }
-
-/* .jornada .img{
-     height: 5%;
-    width: 4%;
-    padding: 4px;
-} */
 
 .sec-3 .bloco{
     margin-top: -10%;
@@ -172,26 +163,3 @@ section{
     height: 82%;
 }
   
-
-
-
-
-/* .jornada{
-    height: 50%;
-    width: 90%;
-    box-shadow: 1%, 1%, 1% 1% black;
-    background-color: var(--cor4);
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 1px  10px 12px rgba(0, 0, 0, 0.236);
-}
-
-.square h2{
-    font-size: 1.6vw;
-    color: black;
-} */
-
-
