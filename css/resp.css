@@ -20,5 +20,10 @@
     display: none;
 }
 
-
+.sec-1 .img-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    margin-left: -60vw;
+}
 } 
