@@ -74,12 +74,14 @@ section{
 
 .card h2{
     font-size: 1.6vw;
+    padding: 15px;
 }
 
 .card h3{
     padding: 5%;
     font-size: 13px;
     font-weight: 500;
+    height: 80px;
 }
 
 
