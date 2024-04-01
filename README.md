@@ -1,5 +1,5 @@
 # Projeto Netuno
-## 2º Desafio do projeto Netuno 2023
+## 2º Desafio do projeto Netuno 2024
 
 ### Este repositorio tem como objetivo resolver o desafio de landing page, que foi proposto durante a seleção do processo seletivo Netuno.
 
